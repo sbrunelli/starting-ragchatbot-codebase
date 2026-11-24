@@ -10,6 +10,8 @@ A RAG chatbot that answers questions about course transcripts in `docs/`. FastAP
 
 Uses `uv` (Python 3.13+). Requires `ANTHROPIC_API_KEY` in `.env` at the repo root (see `.env.example`).
 
+**Always use `uv` to run the server and manage dependencies. Never use `pip` directly.** Use `uv sync` / `uv add <pkg>` instead of `pip install`, and `uv run ...` to run Python commands.
+
 ```bash
 uv sync                      # install dependencies
 ./run.sh                     # start server on :8000 (UI at /, OpenAPI docs at /docs)
